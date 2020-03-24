@@ -1,3 +1,13 @@
+function doTheClickThing() {
+    document.body.style.color = getRandomThing(fgcolors);
+    document.body.style.backgroundColor = getRandomThing(bgcolors);
+    document.getElementById("icebreaker").innerHTML = '<p>'+getRandomThing(questions)+'</p>';
+}
+
+function getRandomThing(thing) {
+    return thing[Math.floor(Math.random()*thing.length)];
+}
+
 const fgcolors = [
     "#f4f990",
     "#cdf199",
@@ -19,7 +29,7 @@ const bgcolors = [
 ]
 
 const questions = [
-    "What is one article of clothing that someone could wear that would make you walk out on a date with them?",
+    "Someone offers you a billion dollars to lose one of your 5 senses. Would you do it? If so, which one?",
     "The zombie apocalypse is coming, who are 3 people you want on your team?",
     "What is your most used emoji?",
     "What was the worst style choice you ever made?",
@@ -95,7 +105,7 @@ const questions = [
     "What's the weirdest food you've ever eaten?",
     "What's the most out-of-character thing you've ever done?",
     "What is your cellphone wallpaper?",
-    "You can have an unlimited supply of one thing for the rest of your life, what is it? Sushi? Scotch Tape?",
+    "You can have an unlimited supply of one thing for the rest of your life, what is it?",
     "What's your best scar story?",
     "Would you go with aliens if they beamed down to Earth?",
     "Are you sunrise, daylight, twilight, or nighttime? Why?",
@@ -255,7 +265,7 @@ const questions = [
     "What blog or website are you embarrassed to admit you love?",
     "What do you never leave the house without (can't be your phone, keys or wallet)?",
     "Who is your celebrity look-alike?",
-    "What's your real favorite book, and what book do you pretend is your favorite to sound smart?",
+    "What's your favorite book? Why?",
     "What do you pretend to hate but actually love?",
     "What's a nickname people actually call you?",
     "If you could pick your nickname, what would people call you?",
@@ -362,7 +372,6 @@ const questions = [
     "Have you ever planted a garden?",
     "Have you ever experienced a natural disaster like a hurricane or tornado?",
     "Have you ever won a contest?",
-    "Have you ever eaten a whole pizza by yourself?",
     "Have you ever done any extreme sports like skydiving or bungee jumping?",
     "When did you get your first cell phone? What kind was it?",
     "If you had to choose between only having a cell phone or a car for the rest of your life, which would you choose?",
@@ -459,7 +468,7 @@ const questions = [
     "What do you highly recommend to most people you meet?",
     "Do you think you have a pretty good work-life balance? Why or why not?",
     "What was the last thing you were really excited about?",
-    "What's your best “my coworkers are crazy” story?",
+    "What's your best \"my coworkers are crazy\" story?",
     "What does your perfect breakfast look like?",
     "What are some of your favorite holiday traditions that you did while growing up?",
     "If you could choose your dreams, what would you prefer to dream about?",
@@ -479,7 +488,7 @@ const questions = [
     "What's the most amazing natural occurrence you've witnessed?",
     "How did you get that scar of yours?",
     "What do you wish was illegal?",
-    "If someone came up to you and said “Hey, do that thing you do!”, what thing would pop into your head first?",
+    "If someone came up to you and said \"Hey, do that thing you do!\", what thing would pop into your head first?",
     "Who is the most intelligent or creative person you know?",
     "What wastes the most time in your day to day life?",
     "What's a problem you have, that might be entirely unique to you?",
@@ -493,7 +502,7 @@ const questions = [
     "What's the best or worst prank you've played on someone?",
     "What was the scariest movie you've seen?",
     "What motivates you?",
-    "Where are five places you really want to visit before you die?",
+    "Where are three places you really want to visit before you die?",
     "What's the best location to fully enjoy a good cup of coffee?",
     "How handy are you when it comes to fixing things?",
     "What skill or talent would you most like to learn?",
@@ -514,7 +523,6 @@ const questions = [
     "What's the longest trip you've been on?",
     "What was something you thought would be easy until you tried it?",
     "What, in your opinion, is the most amazing animal?",
-    "What is the biggest mistake you've made at work?",
     "Who is the oldest person you know personally? What interesting stories have they told you?",
     "Who is the funniest person in your family?",
     "What useless facts do you know?",
@@ -586,7 +594,6 @@ const questions = [
     "What are you best at fixing?",
     "What movie never gets old no matter how many times you've seen it?",
     "If the universe is just a simulation, what update or patch does it need?",
-    "Where have you traveled to?",
     "What's the scariest horror movie or horror book monster?",
     "What's the most unique shop or restaurant you've been in?",
     "What hard time in your life left you a better person after it was finished?",

@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Icebreakers</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="icebreakers.css" />
     <script type="text/javascript" src="icebreakers.js"></script>
-    <style>
-        .icebreaker {
-            margin: 300px 25px;
-            padding: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font: 3rem sans-serif;
-        }
-    </style>
 </head>
-<body>
+<body onload="doTheClickThing();">
     <noscript>You'll need to enable JavaScript in order to see the questions.</noscript>
-    <script type="text/javascript">
-        var randomFgColor = fgcolors[Math.floor(Math.random()*fgcolors.length)];
-        document.body.style.color = randomFgColor;
-        var randomBgColor = bgcolors[Math.floor(Math.random()*bgcolors.length)];
-        document.body.style.backgroundColor = randomBgColor;
-        var randomQuestion = questions[Math.floor(Math.random()*questions.length)];
-        document.body.innerHTML = '<span class="icebreaker">'+randomQuestion+'</span>';
-    </script>
+    <div id="icebreaker"></div>
+    <div id="another">
+        <button type="button" onclick="doTheClickThing();">Another Question</button>
+    </div>
 </body>
 </html>
