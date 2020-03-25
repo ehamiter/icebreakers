@@ -1,0 +1,31 @@
+{
+  "name": "Icebreakers",
+  "short_name": "Icebreakers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icons/ice-cube-72.png",
+      "type": "image/png", "sizes": "72x72"
+    },
+    {
+      "src": "/images/icons/ice-cube-128.png",
+      "type": "image/png","sizes": "128x128"
+    },
+    {
+      "src": "/images/icons/ice-cube-144.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "/images/icons/ice-cube-192.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons/ice-cube-512.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
